@@ -108,9 +108,6 @@
 }
 
 /* about me styling */
-section{
-    padding: 100px 0;
-}
 .aboutme{
     font-family: 'Poppins', sans-serif;
 }
@@ -133,7 +130,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.aboutme .title:after{
+.aboutme .title::after{
     content: "Justin Gallagher";
     position: absolute;
     bottom: -17px;
@@ -150,39 +147,42 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-.aboutme-content .left{
+.aboutme .aboutme-content .left{
     width: 45%;
 }
-.aboutme-content .left img{
-    height: 400px;
-    width: 400px;
+.aboutme .aboutme-content .left img{
+    height: auto;
+    width: 100%;
     object-fit: cover;
     border-radius: 6px;
 }
-.aboutme-content .right{
+.aboutme .aboutme-content .right{
     width: 55%;
 }
-.aboutme-content .right .text{
+.aboutme .aboutme-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.aboutme-content .right p{
+.aboutme .aboutme-content .right .text span{
+    color: crimson;
+}
+.aboutme .aboutme-content .right p{
     text-align: justify;
 }
-.aboutme-content .right a{
+.aboutme .aboutme-content .right a{
     display: inline-block;
     background: crimson;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 3px;
+    padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.aboutme-content .right a:hover{
+.aboutme .aboutme-content .right a:hover{
     color: crimson;
     background: none;
 }
@@ -193,9 +193,8 @@ section{
         margin-left: 0px;
     }
 }
-
-@media (max-width: 1104px) {
-    .about .about-content .left img{
+@media (max-width: 1100px) {
+    .aboutme .aboutme-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -249,19 +248,18 @@ section{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .aboutme .aboutme-content .column{
         width: 100%;
     }
-    .about .about-content .left{
-        display: flex;
+    .aboutme .aboutme-content .left{
+        display: none;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .aboutme .aboutme-content .right{
         flex: 100%;
     }
 }
-
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -276,7 +274,6 @@ section{
         font-size: 20px;
     }
 }
-
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -284,7 +281,7 @@ section{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text{
+    .aboutme .aboutme-content .right .text{
         font-size: 19px;
     }
 }
