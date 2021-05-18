@@ -35,6 +35,13 @@
     font-weight: 600;
     color: #fff;
 }
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar .logo a span.sticky{
+    color: #fff;
+}
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -188,8 +195,6 @@
 }
 
 /* responsive media query start */
-@media (max-width: 1300px) {
-}
 @media (max-width: 1100px) {
     .aboutme .aboutme-content .left img{
         height: 350px;
