@@ -2,64 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Gallagher's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
 </head>
 <body>
 
-    <!-- navigation bar -->
-
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfol.<span>io</span></a></div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- home screen -->
-
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="msg1">Welcome! My name is</div>
-                <div class="msg2">Justin Gallagher</div>
-                <div class="msg3">and I'm a <span>Developer</span></div>
-                <a href="#">Hire Me!</a>
-            </div>
-        </div>
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Justin Gallagher</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">software developer</p>
+        <img src="imgs/profile.jpg" alt="photo of myself">
     </section>
 
-    <!-- about me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am?</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni atque incidunt ducimus in enim,
+                iure dicta cumque molestias odio ullam inventore ad, dolore, natus tempore ex eius ipsum debitis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni atque incidunt ducimus in enim,
+                iure dicta cumque molestias odio ullam inventore ad, dolore, natus tempore ex eius ipsum debitis.</p>
+        </div>
+        <img src="imgs/nku.jpg" alt="northern kentucky university logo">
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Temp1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil libero omnis esse dolorem, 
+                    itaque minima provident suscipit pariatur velit perspiciatis maxime in fugit ipsum doloremque quod. 
+                    Sit modi optio delectus reprehenderit, voluptatum veniam fugiat id doloremque ipsum impedit! 
+                    Dolorum dolores tempore nam eius soluta ipsam? Dicta repellat eum, asperiores laboriosam quod 
+                    recusandae adipisci alias pariatur tempora, unde dolor laborum! Corrupti!</p>
+            </div>
+            <div class="service">
+                <h3>Temp2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil libero omnis esse dolorem, 
+                    itaque minima provident suscipit pariatur velit perspiciatis maxime in fugit ipsum doloremque quod. 
+                    Sit modi optio delectus reprehenderit, voluptatum veniam fugiat id doloremque ipsum impedit! 
+                    Dolorum dolores tempore nam eius soluta ipsam? Dicta repellat eum, asperiores laboriosam quod 
+                    recusandae adipisci alias pariatur tempora, unde dolor laborum! Corrupti!</p>
+            </div>
+            <div class="service">
+                <h3>Temp3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil libero omnis esse dolorem, 
+                    itaque minima provident suscipit pariatur velit perspiciatis maxime in fugit ipsum doloremque quod. 
+                    Sit modi optio delectus reprehenderit, voluptatum veniam fugiat id doloremque ipsum impedit! 
+                    Dolorum dolores tempore nam eius soluta ipsam? Dicta repellat eum, asperiores laboriosam quod 
+                    recusandae adipisci alias pariatur tempora, unde dolor laborum! Corrupti!</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
     
-    <section class="aboutme" id="aboutme">
-        <div class="max-width">
-            <h2 class="title">About Me</h2>
-            <div class="aboutme-content">
-                <div class="column left">
-                    <img src="imgs/nku.jpg">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Justin, a student at Northern Kentucky Univeristy studying Computer Science!</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dicta qui quis aliquid nobis praesentium ex ipsum labore quidem. Vitae quasi veritatis amet id reprehenderit laborum blanditiis nostrum, ullam assumenda, at eius? Necessitatibus accusantium ex rerum non dolores quidem numquam veritatis cumque, impedit harum explicabo repellat sequi dicta eius ipsa similique at ducimus rem magnam laborum ut esse, cupiditate in? Sequi vel itaque eius aliquam nostrum nam inventore? Blanditiis, incidunt molestiae! Vitae molestias repudiandae odit explicabo officiis ipsa quidem expedita illo architecto consectetur, similique incidunt sed accusantium quasi vel dolorum quia. Cum, iusto error deserunt optio tempora ipsam numquam facere, illo dignissimos iure officia quisquam nisi nam sit voluptas! Culpa pariatur atque delectus eum cum voluptatum voluptas quia quibusdam nihil! Aut in debitis quis atque repellendus officiis labore culpa natus tenetur molestias, doloremque tempore, amet corporis necessitatibus voluptatem obcaecati ipsa sequi ipsam nobis minima reiciendis non. Vitae quibusdam suscipit debitis consectetur totam ex ea libero, architecto maiores tempora autem temporibus qui vero ut quam sapiente corrupti tempore distinctio quidem. Animi consectetur aut tenetur vero fugit nobis ea cupiditate corrupti. Eos dicta nesciunt quisquam, est numquam blanditiis fugit qui quibusdam, cupiditate saepe assumenda obcaecati esse laudantium odit, modi expedita. Voluptates, itaque.</p>
-                    <div style="text-align: center"><a href="#">Download Resume</a></div>
-                </div>
-            </div>
+    <section class="work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitile section__subtitile--work"></p>
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio01.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio02.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio03.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio04.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio05.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="imgs/portfolio06.jpg" alt="" class="portfolio__img">
+            </a>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <a href="mailto:gallagherj3@nku.edu" class="footer__link">gallagherj3@nku.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://www.linkedin.com/in/justin-gallagher-97271920b/" class="social-list__link">temp1</a></li>
+            <li class="social-list__item"><a href="https://github.com/ThisJustin-code" class="social-list__link">temp2</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
