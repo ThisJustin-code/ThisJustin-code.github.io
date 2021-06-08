@@ -10,3 +10,10 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     });
 });
+
+var typed = new Typed(".typing", {
+    strings: ["Portfol.io"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+})
