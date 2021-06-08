@@ -14,6 +14,6 @@ navLinks.forEach(link => {
 var typed = new Typed(".typing", {
     strings: ["Portfol.io"],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 80,
     loop: true
 })
