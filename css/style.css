@@ -5,16 +5,16 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Roboto Mono', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-white: #fff;
-    --clr-light: #CFDEE7;
-    --clr-dark: #5E7CE2;
-    --clr-accent: #92B4F4;
+    --clr-light: #e1e7e0;
+    --clr-accent: #6aa4b0;
+    --clr-mid: #2f6d80;
+    --clr-dark: #2b4560;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -133,13 +133,13 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 500px;
 }
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -169,7 +169,7 @@ header {
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-mid);
 }
 
 .nav-toggle {
@@ -206,7 +206,7 @@ header {
 .nav-open .hamburger,
 .nav-open .hamburger::before,
 .nav-open .hamburger::after {
-    background: var(--clr-light);
+    background: var(--clr-dark);
 }
 
 
