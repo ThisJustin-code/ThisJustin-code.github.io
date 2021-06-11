@@ -82,6 +82,7 @@ img {
 }
 
 #btn2 {
+    display: none;
     position: fixed;
     bottom: 1em;
     right: 1em;
