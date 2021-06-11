@@ -14,6 +14,22 @@ navLinks.forEach(link => {
 var typed = new Typed(".typing", {
     strings: ["Portfol.io"],
     typeSpeed: 100,
-    backSpeed: 80,
-    loop: true
-})
+    loop: false
+});
+
+topscrollbtn = document.getElementById("btn2");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topscrollbtn.style.display = "block";
+    } else {
+        topscrollbtn.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
