@@ -101,6 +101,25 @@ img {
     transform: scale(1.2);
 }
 
+.btn3 {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    margin-top: 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn3:hover {
+    transform: scale(1.2);
+}
+
 h1,
 h2,
 h3 {
