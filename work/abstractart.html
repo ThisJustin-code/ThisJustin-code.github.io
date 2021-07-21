@@ -24,7 +24,21 @@
 
     <section class="individual__portfolio" style="background-image: url(../imgs/portfolio01.jpg);">
         <h2 class="section__title section__title--individual__portfolio">Abstract Art Generative Adversarial Network</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, facere ex? Esse, veritatis vero tenetur quia sint minima sapiente quibusdam saepe nisi non officia neque similique fugit suscipit adipisci quas mollitia deserunt maiores necessitatibus ea, tempora aspernatur! Fuga quos officiis in ullam quis ratione aspernatur sapiente velit adipisci odio a ex voluptas aperiam suscipit molestias non similique nobis necessitatibus, assumenda error pariatur asperiores. Perspiciatis saepe vero, blanditiis minus dolores ea corporis totam commodi odit, ab, voluptas tempore? Doloremque praesentium beatae mollitia. Placeat pariatur tempora vitae, aliquam ipsum fuga optio provident earum consequatur quo dolorem exercitationem blanditiis aperiam adipisci in asperiores vel ad magnam cum vero facere at et. Quae aliquid optio unde vel fugiat? Aliquam repellat ipsa hic earum illum enim sed dicta atque. Culpa, perferendis ut cumque consequuntur iusto dolore deserunt odio architecto debitis! Odit excepturi ducimus itaque? Laudantium veritatis quae fugit, laborum, aliquid consequatur fuga quis dolorum atque soluta nostrum eius minus, veniam illum eveniet. Ipsum harum quod quidem, fuga, fugiat, fugit unde error vero explicabo laborum ipsa. Illum eveniet sequi iusto autem, perferendis, similique consequuntur voluptatum libero fugit vel odio facilis nobis accusamus cumque consequatur corporis atque quasi repellat cupiditate rem. Quis minus impedit exercitationem quidem sint?</p>
+        <p>This is a GAN (Generative Adversarial Network) or neural network I trained to generate artificial images of abstract 
+            art at 256x256 resolution. I used my customized version of Nvidia's StyleGAN2-ada-pytorch (available on GitHub) to train on my own curated 
+            abstract art data-set.</p>
+
+        <p>To gather the initial data-set, I made a script that uses Flickr's API to download images from their database based on a pre-defined keyword.
+            In this case, I used the keyword 'abstract art' when downloading images. This resulted in a directory of over 3,000 images of various art.
+            I then created a script that resizes the images in a given directory to a set (x,y) size. I choose to train on 256x256 sized images because of my 
+            machine's overall limited capability (trained on RTX 2080 SUPER).</p>
+
+        <p>I only trained this model for around 48 hours, because I was seeing very little improvement to the model in the last 8 hours of training. Results inlcude
+            images that mimic the styles of various visual arts. Although the art itself is extremely abstract, the model did a surprisingly good job of learning and generating
+            different art styles (paintings, pencil drawings, graphitti, etc). Along with some of the generated preview images for this project, I modified StyleGAN2-ada-pytorch
+            to generate video of the artificial images by stitching together multiple images along a particular generated seed's latent vector space. The button below will take
+            you to my GitHub repo where preview photos and videos are available along with the log data from the training process.  
+        </p>
         <a href="https://github.com/ThisJustin-code/pretrained-gan-abstract-art-256" class="btn3">Github Repository</a>
     </section>
 
